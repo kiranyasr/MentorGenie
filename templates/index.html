@@ -1,10 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MentorGenie</title>
+    <title>🧠 MentorGenie</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 30px; background: #f0f8ff; }
+        input, button { padding: 10px; margin-top: 10px; }
+        .output { margin-top: 20px; background: #fff; padding: 15px; border-radius: 10px; }
+    </style>
 </head>
 <body>
-    <h1>Welcome to MentorGenie 👋</h1>
-    <p>Your AI-powered virtual teacher is under development!</p>
+    <h1>🧠 MentorGenie - Learn Anything</h1>
+    <form method="POST">
+        <input type="text" name="topic" placeholder="Enter a topic..." required>
+        <button type="submit">Explain</button>
+    </form>
+    {% if response %}
+    <div class="output">
+        <h3>Explanation:</h3>
+        <p>{{ response }}</p>
+    </div>
+    {% endif %}
 </body>
 </html>
