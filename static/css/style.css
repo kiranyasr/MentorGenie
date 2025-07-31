@@ -1,0 +1,183 @@
+/* =============== Reset & Base =============== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fff1f2, #ffe4e6); /* Soft peach-pink */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* =============== Home Page (Hero Section) =============== */
+.hero-section {
+  padding: 80px 20px;
+}
+
+.hero-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px; /* Reduced spacing */
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Welcome Text Block */
+.hero-content {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #6b21a8;
+}
+
+.hero-content .highlight {
+  color: #d946ef;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+/* CTA Button */
+.fancy-button {
+  background: linear-gradient(to right, #ec4899, #d946ef);
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(217, 70, 239, 0.4);
+}
+
+.fancy-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(236, 72, 153, 0.5);
+}
+
+/* =============== Index Page (Learning UI) =============== */
+.index-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #fffafa;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.index-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #d946ef;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="text"] {
+  padding: 14px 18px;
+  font-size: 1rem;
+  border: 2px solid #ec4899;
+  border-radius: 12px;
+  outline: none;
+  box-shadow: 0 2px 8px rgba(236, 72, 153, 0.1);
+}
+
+button {
+  padding: 14px;
+  background-color: #ec4899;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #be185d;
+}
+
+/* Response Output */
+.response-box {
+  margin-top: 30px;
+  padding: 24px;
+  background-color: #fff5f7;
+  border-radius: 16px;
+  line-height: 1.7;
+  font-size: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+.response-box pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 14px;
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.response-box ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.response-box li {
+  margin-bottom: 10px;
+}
+
+.response-box strong {
+  color: #212529;
+  font-weight: 600;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-family: monospace;
+}
+
+/* =============== Responsive =============== */
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding: 30px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}

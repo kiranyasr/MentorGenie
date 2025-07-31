@@ -1,0 +1,23 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to MentorGenie</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <section class="hero-section">
+    <div class="hero-wrapper">
+      <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/banner.jpeg') }}" alt="MentorGenie Banner">
+      </div>
+      <div class="hero-content">
+        <h1>Welcome to <span class="highlight">MentorGenie</span></h1>
+        <p>Your smart AI tutor that explains topics with clarity, fun, and real-world examples — instantly.</p>
+        <a href="{{ url_for('learn') }}" class="fancy-button">Let’s Dive In</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

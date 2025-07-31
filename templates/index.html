@@ -1,24 +1,23 @@
+<!-- templates/index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>🧠 MentorGenie</title>
-    <style>
-        body { font-family: Arial, sans-serif; padding: 30px; background: #f0f8ff; }
-        input, button { padding: 10px; margin-top: 10px; }
-        .output { margin-top: 20px; background: #fff; padding: 15px; border-radius: 10px; }
-    </style>
+  <meta charset="UTF-8">
+  <title>MentorGenie - Learn</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>🧠 MentorGenie - Learn Anything</h1>
+  <div class="index-container">
+    <h1>📚 Ask Your Topic</h1>
     <form method="POST">
-        <input type="text" name="topic" placeholder="Enter a topic..." required>
-        <button type="submit">Explain</button>
+      <input type="text" name="topic" placeholder="Enter any topic you want to learn..." required>
+      <button type="submit">Generate Explanation</button>
     </form>
     {% if response %}
-    <div class="output">
-        <h3>Explanation:</h3>
-        <p>{{ response }}</p>
-    </div>
+      <div class="response-box">
+        {{ response|safe }}
+      </div>
     {% endif %}
+  </div>
 </body>
 </html>
